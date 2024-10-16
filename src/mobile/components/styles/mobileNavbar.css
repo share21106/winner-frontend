@@ -1,0 +1,284 @@
+.m-navbar {
+    display: block;
+    width: 100%;
+    background-color: #000000;
+    overflow: auto;
+    height: 50px;
+    padding-bottom: 3px;
+    z-index: 9 !important;
+}
+
+.sports-type {
+    position: fixed;
+    top: 50px;
+    display: block;
+    width: 100%;
+    background-color: #000000;
+    overflow: auto;
+    height: 53px;
+    padding-bottom: 3px;
+    z-index: 5;
+}
+
+.league-navbar {
+    top: 103px;
+    background-color: #ffffff;
+    z-index: 5 !important;
+    transition: top 0.7s;
+}
+
+.m-navbar i,
+.league-navbar i {
+    font-size: 28px;
+}
+
+.m-navbar .login {
+    border: solid 1px #25851f;
+}
+
+.m-navbar .login a {
+    text-align: center;
+    align-self: center;
+    font-size: 13px;
+    color: #25851f !important;
+    font-weight: 800;
+}
+
+.sidenav .login a {
+    width: 100%;
+}
+
+.user-info {
+    margin-top: -2px;
+    margin-right: 15px;
+    display: inline-grid;
+}
+
+.user-info span {
+    color: #c96141;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.m-navbar .top-nav {
+    float: left;
+    padding: 2px 6px 2px 6px;
+    color: #bbbbbb;
+    font-size: 15px;
+    cursor: default;
+}
+
+/* subnavbar */
+
+.league-navbar>div,
+.sports-type {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sports-type::-webkit-scrollbar {
+    display: none;
+}
+
+.league-navbar>div::-webkit-scrollbar {
+    display: none;
+}
+
+/* .league-navbar>div:last-child>div {
+    background-color: white;
+    color: #000000;
+    display: inline-grid;
+    padding: 3px 4px;
+    margin-bottom: 2px;
+} */
+
+.sports-type .item {
+    float: left;
+    display: inline-grid;
+    padding: 6px 6px 3px 6px;
+    color: white;
+    cursor: default;
+    margin: 0px 6px 3px 6px;
+    width: max-content;
+    text-align: center;
+}
+
+.sports-type .item img,
+.league-navbar .leagues img {
+    margin: auto;
+}
+
+.sports-type .item img {
+    width: 25px;
+}
+
+.league-navbar .leagues {
+    color: #000000;
+    min-width: 100px;
+    background-color: white;
+    color: #000000;
+    display: inline-grid;
+    padding: 3px 4px;
+    margin-bottom: 2px;
+}
+
+.league-navbar .leagues img {
+    margin: auto;
+    height: 25px;
+}
+
+.league-active {
+    border-bottom: solid 2px #25851f;
+    margin-bottom: 0px !important;
+}
+
+.league-navbar .leagues .font {
+    font-size: 12px;
+}
+
+.sports-type p,
+.league-navbar p {
+    margin: auto;
+    width: max-content;
+    font-size: 10px;
+    text-align: center;
+}
+
+.sports-type .item-active {
+    border-bottom: solid 3px #25851f;
+    margin-bottom: 0px;
+}
+
+/* side navbar */
+.sidenav {
+    width: 0px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.openside {
+    width: 60%;
+    overflow-y: scroll;
+}
+
+.opacity-back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #00000096;
+}
+
+.sidenav p {
+    cursor: default;
+    padding: 9px 9px 9px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ebebeb;
+    display: block;
+    transition: 0.3s;
+    border-bottom: solid 1px #b1b1b1;
+}
+
+.sidenav>.pan {
+    color: #999999;
+    background-color: #0f0f0f;
+}
+
+.sidenav>.pan>div {
+    font-size: 11px;
+    padding: 4px;
+}
+
+.sidenav .sidenav_lists {
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+
+.sidenav .sidenav_lists .lang_list {
+    display: none;
+}
+
+.sidenav .sidenav_lists .lang_list p {
+    border: 0px;
+}
+
+.sidenav .sidenav_lists .lang_list div {
+    border-bottom: solid 1px #b1b1b1;
+}
+
+.selected_lang {
+    height: 20px;
+    padding-right: 10px;
+}
+
+.sidenav .sidenav_lists .lang_list img {
+    height: 20px;
+    padding: 0px 10px 0px 10px;
+}
+
+.lang_list_expand {
+    display: block !important;
+}
+
+.expand_icon {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.tip-types {
+    padding: 5px 0 5px 5px;
+}
+
+.tip-types>div {
+    display: flex;
+}
+
+.tip-types .tip-type {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+}
+
+.tip-types .tip-type p {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 3px;
+    border: solid 1px #bbb;
+    background: linear-gradient(180deg, #fff 0, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6);
+}
+
+.sportstypes ul {
+    padding-left: 15px;
+}
+
+.selected {
+    font-weight: 700;
+    color: #fff;
+    background: #25851f !important;
+    border: 1px solid #25851f !important;
+}
+
+.collapse {
+    color: #25851f !important;
+}
+
+.match-count {
+    float: right;
+}
+
+.account {
+    padding-left: 8px;
+}
